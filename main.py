@@ -1,4 +1,7 @@
+import os
+import sys 
 import time
+import datetime
 
 from requests import session as RequestsSession
 from telegram import Bot
@@ -9,7 +12,7 @@ from olx import fetch_ads
 from olx import filter_new_ads
 from tg import send_message_into_telegram
 
-
+# create def main():
 def main():
     new_ads = []
     bot = Bot(token=settings.TELEGRAM_BOT_KEY)
